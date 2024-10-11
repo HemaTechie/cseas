@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CSEA Photo Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="winners.html">Winners</a></li>
+                <li><a href="scoreboard.html">Scoreboard</a></li>
+                <li><a href="gallery.html">Photo Gallery</a></li>
+                <li><a href="office-bearers.html">Office Bearers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-section">
+            <h2>Event Highlights</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/event1.jpg" alt="Event 1">
+                    <p>Hackathon 2023</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/event2.jpg" alt="Event 2">
+                    <p>AI Workshop 2023</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/event3.jpg" alt="Event 3">
+                    <p>Code Sprint 2024</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/event4.jpg" alt="Event 4">
+                    <p>Robotics Challenge 2024</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CSEA | All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!-- CSS for gallery -->
+<style>
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .gallery-item {
+        position: relative;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .gallery-item p {
+        text-align: center;
+        margin-top: 5px;
+        font-size: 16px;
+        color: #333;
+    }
+</style>
